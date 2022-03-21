@@ -26,7 +26,6 @@ class UiBook {
    #updateUI() {
       //<li>Title: Title Of Book - <br> Author: Albert Someting </li>
       bookList.innerHTML ="";
-      console.log(this.booksAdded);
       
       let bookHTML ="";
       for (let i = 0; i < this.booksAdded.length; i += 1){
@@ -41,7 +40,10 @@ class UiBook {
       removeBtns.forEach(removeBtn => removeBtn.addEventListener('click', (ev) => {
          this.removeBook(this.booksAdded[ev.target.id]);
       }))
-   }
+
+
+      localStorage.setItem("booksAdded", JSON.stringify(this.booksAdded));
+   };
 }
 
 const myUiBook = new UiBook()
@@ -53,15 +55,20 @@ getForm.addEventListener('submit', (event) => {
 
    const myBook = new book(author, title);
 
+   titleInput.value = "";
+   AuthorInput.value="";
+
    myUiBook.addBook(myBook);
 
 });
 
+//we can load the items from localstore
+const localstoreBooks = localStorage.getItem('booksAdded');
+const bookObjects = JSON.parse(localstoreBooks);
 
-
-
-
-
+bookObjects.forEach(book => myUiBook.addBook(book));
+//we have parse the items from localstorage to JSON js objects
+//loop thru the array and add the books on the view
 
 
 

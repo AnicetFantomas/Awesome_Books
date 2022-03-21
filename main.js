@@ -1,3 +1,5 @@
+import UiBook from './UiBook.js';
+
 const titleInput = document.querySelector('#title');
 const AuthorInput = document.querySelector('#author');
 const getForm = document.querySelector('#books-form');
@@ -7,7 +9,7 @@ class Book {
     this.Author = Author;
     this.Title = Title;
   }
-};
+}
 
 const myUiBook = new UiBook();
 getForm.addEventListener('submit', (event) => {

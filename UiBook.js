@@ -35,3 +35,5 @@ class UiBook {
       localStorage.setItem('booksAdded', JSON.stringify(this.booksAdded));
     }
 }
+
+export default UiBook;

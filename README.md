@@ -25,6 +25,7 @@ To get a local copy up and running follow these simple example steps.
 git clone 
 https://github.com/AnicetFantomas/Awesome_Books.git
 
+Run the index.html on a live server.
 ```
 
 ### Deployment
@@ -35,16 +36,16 @@ https://anicetfantomas.github.io/Awesome_Books/
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/AnicetFantomas)
+- GitHub: [@AnicetFantomas](https://github.com/AnicetFantomas)
 
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/anicet-murhula-13a1b0220/)
+- LinkedIn: [Anicet Murhula](https://www.linkedin.com/in/anicet-murhula-13a1b0220/)
 
 
 👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/AnicetFantomas)
+- GitHub: [@sabetech](https://github.com/sabetech)
 
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/anicet-murhula-13a1b0220/)
+- LinkedIn: [Albert Mensah-Ansah](https://www.linkedin.com/in/Albertkma/)
 
 
 ## 🤝 Contributing
@@ -62,7 +63,3 @@ Give a ⭐️ if you like this project!
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.

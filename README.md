@@ -34,14 +34,14 @@ https://anicetfantomas.github.io/Awesome_Books/
 
 ## Authors
 
-👤 **Author1**
+👤 **Anicet Murhula**
 
 - GitHub: [@AnicetFantomas](https://github.com/AnicetFantomas)
 
 - LinkedIn: [Anicet Murhula](https://www.linkedin.com/in/anicet-murhula-13a1b0220/)
 
 
-👤 **Author2**
+👤 **Albert Mensah-Ansah**
 
 - GitHub: [@sabetech](https://github.com/sabetech)
 

@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,22 +17,15 @@
 
 h1 {
   text-align: center;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-bottom: 15px;
-}
-
-.wrapper ul li{
-  list-style: none;
-  margin: 2px 40px;
-  font-style : italic;
-  display: flex;
 }
 
 .book-info {
   flex-grow: 1;
 }
 
-.books ul button{
+.books ul button {
   margin-left: 40%;
 }
 
@@ -54,12 +47,12 @@ h1 {
   width: 90%;
 }
 
-#books-form  button {
+#books-form button {
   padding: 9px;
   width: 90%;
   font-size: 18px;
   font-weight: bold;
-  background-color:#000;
+  background-color: #000;
   color: #fff;
 }
 
@@ -73,8 +66,15 @@ span {
 
 li {
   background: rgb(221, 221, 221);
-  }
-  li:nth-child(odd){
-  background:white
-  }
-  
+}
+
+li:nth-child(odd) {
+  background: white;
+}
+
+.wrapper ul li {
+  list-style: none;
+  margin: 2px 40px;
+  font-style: italic;
+  display: flex;
+}

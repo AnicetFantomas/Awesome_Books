@@ -2,11 +2,12 @@
 
 > In this project we created a simple book app wich can store and remove a specific book
 from the list usig objects and classes. The localstorage was also used to store with safety the user's 
-data
+data.
 
 ## How it looks like :
 
-![AwesomeBook2](https://user-images.githubusercontent.com/94958024/159319890-f97fac56-4400-46fd-ab8b-47f8271b52a9.png)
+![projectTwo](https://user-images.githubusercontent.com/94958024/159488328-25b2ad61-c4fd-4477-9ef2-3d745978a383.png)
+
 ## Built With
 
 - HTML
@@ -44,9 +45,8 @@ https://anicetfantomas.github.io/Awesome_Books/
 👤 **Albert Mensah-Ansah**
 
 - GitHub: [@sabetech](https://github.com/sabetech)
-
-- LinkedIn: [Albert Mensah-Ansah](https://www.linkedin.com/in/Albertkma/)
-
+- Twitter: [@al_kfx](https://twitter.com/al_kfx)
+- LinkedIn: [Albert Mensah-Ansah](https://linkedin.com/in/albertkma)
 
 ## 🤝 Contributing
 

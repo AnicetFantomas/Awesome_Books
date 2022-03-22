@@ -6,7 +6,7 @@ const getForm = document.querySelector('#books-form');
 
 class Book {
   constructor(Author, Title) {
-    this.Author = Author;
+    this.Author = Author;      
     this.Title = Title;
   }
 }

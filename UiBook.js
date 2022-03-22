@@ -22,7 +22,7 @@ class UiBook {
       for (let i = 0; i < this.booksAdded.length; i += 1) {
         const listItem = bookList.appendChild(document.createElement('li'));
         listItem.classList.add('my-book');
-        bookHTML = `Title: ${this.booksAdded[i].Title} - <br> Author: ${this.booksAdded[i].Author}<br><button id=${i} class="removebtn" type="button">Remove</button><hr>`;
+        bookHTML = `<div class = "book-info">- Title: <span>${this.booksAdded[i].Title}</span> by Author: <span>${this.booksAdded[i].Author}</span></div><button id=${i} class="removebtn" type="button">Remove</button></br><hr>`;
         listItem.innerHTML = bookHTML;
       }
 

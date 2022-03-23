@@ -28,9 +28,7 @@ class UiBook {
 
     const removeBtns = document.querySelectorAll('.removebtn');
 
-
     removeBtns.forEach((removeBtn) => removeBtn.addEventListener('click', (ev) => {
-    
       this.removeBook(this.booksAdded[ev.target.id]);
     }));
 

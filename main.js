@@ -41,9 +41,9 @@ contactUsLink.addEventListener('click', () => {
     } else {
       section.classList.remove('hidden');
     }
-  });   
+  });
 });
-   
+
 // --------------- Book list ----------------
 
 class Book {

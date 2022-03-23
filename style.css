@@ -80,10 +80,6 @@ footer {
   margin-top: 40px;
 }
 
-.hidden {
-  display: none;
-}
-
 h1 {
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -153,6 +149,12 @@ span {
   flex-direction: column;
 }
 
-#book-list-content img, #add-book img, #contact-us img {
+#book-list-content img,
+#add-book img,
+#contact-us img {
   width: 20%;
+}
+
+.hidden {
+  display: none !important;
 }

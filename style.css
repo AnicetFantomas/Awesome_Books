@@ -156,9 +156,7 @@ span {
   background: white;
 }
 
-img#contact-us,
-img#book-list-content,
-img#add-book {
+img {
   width: 20%;
 }
 

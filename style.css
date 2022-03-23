@@ -31,12 +31,24 @@ a {
   font-size: 18px;
   text-decoration: none;
   color: #000;
-  transition: all ease 0.4s;
+  transition: all ease 0.2s;
 }
 
 nav ul li:hover {
   border: 2px solid;
   cursor: pointer;
+}
+
+a[href="#list"]:focus {
+  color: blue;
+}
+
+a[href="#add-new"]:focus {
+  color: blue;
+}
+
+a[href="#contact"]:focus {
+  color: blue;
 }
 
 footer {

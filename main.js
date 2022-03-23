@@ -3,18 +3,16 @@ import UiBook from './UiBook.js';
 const titleInput = document.querySelector('#title');
 const AuthorInput = document.querySelector('#author');
 const getForm = document.querySelector('#books-form');
+
+//---- links for single page app -------------
+
 const listLink = document.querySelector('#list');
 const addNewLink = document.querySelector('#add-new');
 const contactUsLink = document.querySelector('#contact');
 const notificationMessage = document.querySelector('#message');
 const wrapperSections = document.querySelectorAll('.wrapper');
 
-class Book {
-  constructor(Author, Title) {
-    this.Author = Author;
-    this.Title = Title;
-  }
-}
+//--------- Single Page App function-------------------
 
 listLink.addEventListener('click', () => {
   wrapperSections.forEach((section) => {
@@ -38,13 +36,23 @@ addNewLink.addEventListener('click', () => {
 
 contactUsLink.addEventListener('click', () => {
   wrapperSections.forEach((section) => {
-    if (section.id !== 'contact') {
+    if (section.id !== 'contact-us') {
       section.classList.add('hidden');
     } else {
       section.classList.remove('hidden');
     }
-  });
+  });   
 });
+   
+// --------------- Book list ----------------
+
+class Book {
+  constructor(Author, Title) {
+    this.Author = Author;
+    this.Title = Title;
+  }
+}
+
 
 const myUiBook = new UiBook();
 getForm.addEventListener('submit', (event) => {

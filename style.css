@@ -147,3 +147,12 @@ span {
   font-style: italic;
   display: flex;
 }
+
+#contact-us {
+  display: flex;
+  flex-direction: column;
+}
+
+#book-list-content img, #add-book img, #contact-us img {
+  width: 20%;
+}

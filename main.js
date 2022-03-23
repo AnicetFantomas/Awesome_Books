@@ -4,7 +4,7 @@ const titleInput = document.querySelector('#title');
 const AuthorInput = document.querySelector('#author');
 const getForm = document.querySelector('#books-form');
 
-//---- links for single page app -------------
+// ---- links for single page app -------------
 
 const listLink = document.querySelector('#list');
 const addNewLink = document.querySelector('#add-new');
@@ -12,7 +12,7 @@ const contactUsLink = document.querySelector('#contact');
 const notificationMessage = document.querySelector('#message');
 const wrapperSections = document.querySelectorAll('.wrapper');
 
-//--------- Single Page App function-------------------
+// --------- Single Page App function-------------------
 
 listLink.addEventListener('click', () => {
   wrapperSections.forEach((section) => {
@@ -53,7 +53,6 @@ class Book {
   }
 }
 
-
 const myUiBook = new UiBook();
 getForm.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -81,5 +80,12 @@ if (bookObjects !== null) {
   bookObjects.forEach((book) => myUiBook.addBook(book));
 }
 
+const o = new Intl.DateTimeFormat('en', {
+  timeStyle: 'medium',
+  dateStyle: 'long',
+});
+const datestring = o.format(Date.now());
+
+document.querySelector('.date').textContent = datestring;
 // we have parse the items from localstorage to JSON js objects
 // loop thru the array and add the books on the view

@@ -4,6 +4,58 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  list-style: none;
+  font-weight: bold;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(224, 224, 224);
+  padding: 0 40px;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li, a{
+  margin: 0 15px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #000;
+  transition: all ease 0.4s;
+}
+
+nav ul li:hover {
+  border: 2px solid;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  list-style: none;
+  font-weight: bold;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(224, 224, 224);
+  padding: 0 40px;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.logo {
+  flex-grow: 1;
+  font-size: 30px;
+  cursor: pointer;
+}
+
 .wrapper {
   width: 70%;
   display: flex;
@@ -64,11 +116,11 @@ span {
   margin: 0 15px;
 }
 
-li {
+.books li {
   background: rgb(221, 221, 221);
 }
 
-li:nth-child(odd) {
+.books li:nth-child(odd) {
   background: white;
 }
 
@@ -78,3 +130,4 @@ li:nth-child(odd) {
   font-style: italic;
   display: flex;
 }
+

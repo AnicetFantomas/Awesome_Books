@@ -3,6 +3,11 @@ import UiBook from './UiBook.js';
 const titleInput = document.querySelector('#title');
 const AuthorInput = document.querySelector('#author');
 const getForm = document.querySelector('#books-form');
+const listLink = document.querySelector('#list');
+const addNewLink = document.querySelector('#add-new');
+const contactUsLink = document.querySelector('#contact');
+const notificationMessage = document.querySelector('#message');
+const wrapperSections = document.querySelectorAll('.wrapper');
 
 class Book {
   constructor(Author, Title) {
@@ -10,6 +15,36 @@ class Book {
     this.Title = Title;
   }
 }
+
+listLink.addEventListener('click', () => {
+  wrapperSections.forEach((section) => {
+    if (section.id !== 'book-list-content') {
+      section.classList.add('hidden');
+    } else {
+      section.classList.remove('hidden');
+    }
+  });
+});
+
+addNewLink.addEventListener('click', () => {
+  wrapperSections.forEach((section) => {
+    if (section.id !== 'add-book') {
+      section.classList.add('hidden');
+    } else {
+      section.classList.remove('hidden');
+    }
+  });
+});
+
+contactUsLink.addEventListener('click', () => {
+  wrapperSections.forEach((section) => {
+    if (section.id !== 'contact') {
+      section.classList.add('hidden');
+    } else {
+      section.classList.remove('hidden');
+    }
+  });
+});
 
 const myUiBook = new UiBook();
 getForm.addEventListener('submit', (event) => {
@@ -24,6 +59,11 @@ getForm.addEventListener('submit', (event) => {
   AuthorInput.value = '';
 
   myUiBook.addBook(myBook);
+  notificationMessage.textContent = 'Your Book and author have been saved successfully!!';
+
+  setTimeout(() => {
+    notificationMessage.textContent = '';
+  }, 3000);
 });
 
 // we can load the items from localstore

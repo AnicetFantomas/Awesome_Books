@@ -25,7 +25,8 @@ nav ul {
   list-style: none;
 }
 
-nav ul li, a{
+nav ul li,
+a {
   margin: 0 15px;
   font-size: 18px;
   text-decoration: none;
@@ -65,6 +66,10 @@ footer {
   border: 3px solid black;
   padding: 40px;
   margin-top: 40px;
+}
+
+.hidden {
+  display: none;
 }
 
 h1 {
@@ -130,4 +135,3 @@ span {
   font-style: italic;
   display: flex;
 }
-

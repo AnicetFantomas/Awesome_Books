@@ -14,25 +14,34 @@
         <nav>
             <div class="logo">Awesome Books</div>
             <ul>
-                <li><a href=""> List</a></li>
-                <li><a href="">Add New</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a id="list" href="#list" class="nav-link"> List</a></li>
+                <li><a id="add-new" href="#add-new" class="nav-link">Add New</a></li>
+                <li><a id="contact" href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="wrapper">
+
+        <section id="book-list-content" class="wrapper">
             <h1>All awesome books</h1>
             <ul class="books">
     
             </ul>
-            <hr>
+        </section>
+
+        <section id="add-book" class="wrapper hidden">
             <form id="books-form">
+                <span id="message"></span>
                 <input type="text" name="title" id="title" placeholder="Title" required>
                 <input type="text" name="author" id="author" placeholder="Author" required>
                 <button type="submit">Add</button>
             </form>
-        </div>
+        </section>
+
+        <section id="contact-us" class="wrapper hidden">
+            Contact us information goes here !!!
+        </section>
+        
     </main>
     <footer>
         Copyright 

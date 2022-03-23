@@ -2,15 +2,22 @@
 
 > In this project we created a simple book app wich can store and remove a specific book
 from the list usig objects and classes. The localstorage was also used to store with safety the user's 
-data.
+data. We also used the single page Application (SPA) to improve the UI.
 
 ## How it looks like :
 
-![projectTwo](https://user-images.githubusercontent.com/94958024/159488328-25b2ad61-c4fd-4477-9ef2-3d745978a383.png)
+![BookList](https://user-images.githubusercontent.com/94958024/159773721-ffec9718-f82d-4005-97ff-4dab7ebcad03.png)
+
+![AddBook](https://user-images.githubusercontent.com/94958024/159773878-bb3ac931-efb2-401f-bddc-a6458478e81f.png)
+
+
+![ForContact](https://user-images.githubusercontent.com/94958024/159772983-c971dc12-7f25-400b-bb26-2c4d4cf57305.png)
+
 
 ## Built With
 
 - HTML
+- CSS
 - JavaScript
 
 ## Live Demo is avaible here

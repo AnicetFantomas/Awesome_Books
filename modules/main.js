@@ -1,4 +1,4 @@
-import UiBook from './modules/UiBook';
+import UiBook from './UiBook.js';
 // import date from  './date.js';
 
 const titleInput = document.querySelector('#title');
@@ -10,7 +10,7 @@ const getForm = document.querySelector('#books-form');
 const listLink = document.querySelector('#list');
 const addNewLink = document.querySelector('#add-new');
 const contactUsLink = document.querySelector('#contact');
-const notificationMessage = document.querySelector('#message'); 
+const notificationMessage = document.querySelector('#message');
 const wrapperSections = document.querySelectorAll('.wrapper');
 
 // --------- Single Page App function-------------------

@@ -15,7 +15,6 @@ class UiBook {
   }
 
   #updateUI() {
-    // <li>Title: Title Of Book - <br> Author: Albert Someting </li>
     bookList.innerHTML = '';
 
     let bookHTML = '';

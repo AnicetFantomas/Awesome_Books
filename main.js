@@ -1,5 +1,5 @@
-import UiBook from './modules/UiBook';
-// import date from  './date.js';
+import UiBook from './modules/UiBook.js';
+import { DateTime } from './modules/luxon.js';
 
 const titleInput = document.querySelector('#title');
 const AuthorInput = document.querySelector('#author');
@@ -10,7 +10,7 @@ const getForm = document.querySelector('#books-form');
 const listLink = document.querySelector('#list');
 const addNewLink = document.querySelector('#add-new');
 const contactUsLink = document.querySelector('#contact');
-const notificationMessage = document.querySelector('#message'); 
+const notificationMessage = document.querySelector('#message');
 const wrapperSections = document.querySelectorAll('.wrapper');
 
 // --------- Single Page App function-------------------
@@ -80,14 +80,20 @@ const bookObjects = JSON.parse(localstoreBooks);
 if (bookObjects !== null) {
   bookObjects.forEach((book) => myUiBook.addBook(book));
 }
-//date
-// const o = new Intl.DateTimeFormat('en', {
-//   timeStyle: 'medium',
-//   dateStyle: 'long',   
-// });
-// const datestring = o.format(Date.now());
 
-// document.querySelector('.date').textContent = datestring;
-// we have parse the items from localstorage to JSON js objects
-// loop thru the array and add the books on the view
+// -----------date----------
 
+const myDate = document.querySelector('.date');
+
+const displayDate = () => {
+  window.setInterval(
+    () => {
+      myDate.innerHTML = `${DateTime.local().toLocaleString(
+        DateTime.DATETIME_MED_WITH_SECONDS,
+      )}`;
+    },
+    1000,
+    this,
+  );
+};
+displayDate();
